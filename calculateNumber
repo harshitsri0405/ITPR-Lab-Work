@@ -1,0 +1,28 @@
+//write a program to calculate addition ,difference ,product of two number .
+
+import java.util.Scanner;
+
+class CalculateNumbers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int num1, num2, sum, difference, product;
+
+        // Taking input from user
+        System.out.print("Enter first number: ");
+        num1 = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        num2 = sc.nextInt();
+
+        // Calculations
+        sum = num1 + num2;             // Addition
+        difference = num1 - num2;      // Subtraction
+        product = num1 * num2;         // Multiplication
+
+        // Display results
+        System.out.println("Sum = " + sum);
+        System.out.println("Difference = " + difference);
+        System.out.println("Product = " + product);
+    }
+}
