@@ -1,0 +1,25 @@
+//write a program to display first n own natural number.
+
+import java.util.Scanner;
+
+class NaturalNumbers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter how many natural numbers you want to display: ");
+        int n = sc.nextInt();
+
+        // Check for invalid input
+        if (n <= 0) {
+            System.out.println("Please enter a positive number greater than 0.");
+            return;
+        }
+
+        System.out.println("The first " + n + " natural numbers are:");
+
+        // Using for loop to print numbers
+        for (int i = 1; i <= n; i++) {
+            System.out.print(i + " ");
+        }
+    }
+}
