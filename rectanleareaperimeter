@@ -1,0 +1,38 @@
+//write a program to find out the area and perimter of rectangle .
+import java.util.Scanner;
+
+class RectangleAreaPerimeter {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double length, breadth, area, perimeter;
+
+        // Taking length input
+        System.out.print("Enter length of rectangle: ");
+        length = sc.nextDouble();
+
+        // Check if length is valid
+        if (length <= 0) {
+            System.out.println("Length must be greater than 0.");
+            return;
+        }
+
+        // Taking breadth input
+        System.out.print("Enter breadth of rectangle: ");
+        breadth = sc.nextDouble();
+
+        // Check if breadth is valid
+        if (breadth <= 0) {
+            System.out.println("Breadth must be greater than 0.");
+            return;
+        }
+
+        // Calculate area and perimeter
+        area = length * breadth;
+        perimeter = 2 * (length + breadth);
+
+        // Display result
+        System.out.println("Area of rectangle = " + area);
+        System.out.println("Perimeter of rectangle = " + perimeter);
+    }
+}
